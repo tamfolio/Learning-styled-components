@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const StyledHeader = styled.header `
     background-color: ${({ theme }) => theme.colors.header};
     padding: 40px 0;
+    height: 70vh;
 
     h1{
         color: black;
@@ -31,4 +32,8 @@ export const Logo = styled.img`
 export const Image = styled.img `
     width: 375px;
     margin-left: 40px;
+
+    @media(max-width: ${({theme}) => theme.mobile}){
+        margin: 40px 0 30px;
+    }
 `
