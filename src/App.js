@@ -2,9 +2,9 @@
 
 function App() {
   return (
-    <div className="App">
+    <Container>
      <h1>Styled Components</h1>
-    </div>
+    </Container>
   );
 }
 
